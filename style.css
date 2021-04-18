@@ -57,6 +57,10 @@ body {
     color: #ffffff;
 }
 
+.button:hover {
+    background-color: #000000;
+}
+
 canvas {
     float: right;
 }
