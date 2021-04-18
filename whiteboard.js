@@ -98,7 +98,7 @@ function changePen(size, color) {
                 set6 = false; set7 = false; set8 = false; set9 = false; set10 = false; set11 = false; set12 == true;
             }
         }
-        else if (recentSize == size) {
+        if (recentSize == size) {
             if (size == thick) {
                 set1 = true; set2 = false; set3 = false;
             }
@@ -143,3 +143,9 @@ function update(event) {
 }
 
 cvs.addEventListener("mousemove", update);
+
+window.addEventListener("resize", () => {
+    cvs.height = window.innerHeight - 0;
+    cvs.width = window.innerWidth - 160;
+    clear();
+});
