@@ -120,7 +120,6 @@ function changePen(size, color) {
 }
 
 var drawing = false;
-var dotting = false;
 
 cvs.addEventListener("mousedown", (event) => {
     drawing = true;
