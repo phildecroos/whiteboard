@@ -133,6 +133,10 @@ cvs.addEventListener("mouseup", () => {
 });
 
 function update(event) {
+    if (event.clientX < 163 || event.clientX > window.innerWidth - 3 || event.clientY < 3 || event.clientY > window.innerHeight - 3) {
+        drawing = false;
+        ctx.beginPath();
+    }
     if (drawing) {
         ctx.lineWidth = pen.size;
         ctx.lineCap = "round";

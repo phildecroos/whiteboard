@@ -38,6 +38,12 @@ set14 = false;
 var purple = "#550099";
 var grey = "#707070";
 
+ctx2.fillStyle = purple;
+ctx2.fillRect(0, 0, 8, 35);
+
+ctx6.fillStyle = purple;
+ctx6.fillRect(0, 0, 8, 35);
+
 function showBars(event) {
     var x = event.clientX;
     var y = event.clientY;
