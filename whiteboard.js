@@ -41,7 +41,7 @@ document.getElementById("thick").onclick = function() {changePen(thick, recentCo
 document.getElementById("medium").onclick = function() {changePen(medium, recentColor); set1 = false; set2 = true; set3 = false;};
 document.getElementById("thin").onclick = function() {changePen(thin, recentColor); set1 = false; set2 = false; set3 = true;};
 
-document.getElementById("erasor").onclick = function() {changePen(thick, "white")};
+document.getElementById("eraser").onclick = function() {changePen(20, "white")};
 
 document.getElementById("black").onclick = function() {changePen(recentSize, black); set6 = true; set7 = false; set8 = false; set9 = false; set10 = false; set11 = false; set12 = false;};
 document.getElementById("red").onclick = function() {changePen(recentSize, red); set6 = false; set7 = true; set8 = false; set9 = false; set10 = false; set11 = false; set12 = false;};
@@ -54,7 +54,7 @@ document.getElementById("purple").onclick = function() {changePen(recentSize, pu
 document.getElementById("clear").onclick = function() {clear()};
 
 function changePen(size, color) {
-    // if changing to an erasor, save the size and color before the change
+    // if changing to an eraser, save the size and color before the change
     if (color == "white") {
         recentColor = pen.color;
         recentSize = pen.size;
@@ -73,7 +73,7 @@ function changePen(size, color) {
         set13 = false;
         set14 = false;
     }
-    // if not changing to an erasor, update the size and color to be the values after the change
+    // if not changing to an eraser, update the size and color to be the values after the change
     else {
         if (recentColor == color) {
             if (color == black) {
