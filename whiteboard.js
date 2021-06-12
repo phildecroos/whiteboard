@@ -139,7 +139,7 @@ function update(event) {
     if (drawing) {
         ctx.lineWidth = pen.size;
         ctx.lineCap = "round";
-        ctx.lineTo(event.clientX - 160, event.clientY);
+        ctx.lineTo(event.clientX - 143, event.clientY);
         ctx.strokeStyle = pen.color;
         ctx.stroke();
     }
