@@ -2,7 +2,7 @@ const cvs = document.getElementById("whiteboard");
 const ctx = cvs.getContext("2d");
 
 cvs.height = window.innerHeight - 0;
-cvs.width = window.innerWidth - 160;
+cvs.width = window.innerWidth - 0;
 
 function drawRect(x, y, width, height, color) {
     ctx.fillStyle = color;
@@ -139,7 +139,7 @@ function update(event) {
     if (drawing) {
         ctx.lineWidth = pen.size;
         ctx.lineCap = "round";
-        ctx.lineTo(event.clientX - 143, event.clientY);
+        ctx.lineTo(event.clientX, event.clientY);
         ctx.strokeStyle = pen.color;
         ctx.stroke();
     }
@@ -149,6 +149,6 @@ cvs.addEventListener("mousemove", update);
 
 window.addEventListener("resize", () => {
     cvs.height = window.innerHeight - 0;
-    cvs.width = window.innerWidth - 160;
+    cvs.width = window.innerWidth - 0;
     clear();
 });
