@@ -53,7 +53,7 @@ function showBars(event) {
         ctx1.fillRect(0, 0, 8, 35);
     }
     else {
-    ctx1.fillStyle = grey;
+        ctx1.fillStyle = grey;
         ctx1.fillRect(0, 0, 8, 35);
     }
     if ((x <= 160 && (y > 135 && y < 170)) || set2) {

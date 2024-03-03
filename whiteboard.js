@@ -28,30 +28,30 @@ function clear() {
 clear();
 
 const pen = {
-    x : 0,
-    y : 0,
-    size : medium,
-    color : black
+    x: 0,
+    y: 0,
+    size: medium,
+    color: black
 }
 
 var recentColor = pen.color;
 var recentSize = pen.size;
 
-document.getElementById("thick").onclick = function() {changePen(thick, recentColor); set1 = true; set2 = false; set3 = false;};
-document.getElementById("medium").onclick = function() {changePen(medium, recentColor); set1 = false; set2 = true; set3 = false;};
-document.getElementById("thin").onclick = function() {changePen(thin, recentColor); set1 = false; set2 = false; set3 = true;};
+document.getElementById("thick").onclick = function () { changePen(thick, recentColor); set1 = true; set2 = false; set3 = false; };
+document.getElementById("medium").onclick = function () { changePen(medium, recentColor); set1 = false; set2 = true; set3 = false; };
+document.getElementById("thin").onclick = function () { changePen(thin, recentColor); set1 = false; set2 = false; set3 = true; };
 
-document.getElementById("eraser").onclick = function() {changePen(20, "white")};
+document.getElementById("eraser").onclick = function () { changePen(20, "white") };
 
-document.getElementById("black").onclick = function() {changePen(recentSize, black); set6 = true; set7 = false; set8 = false; set9 = false; set10 = false; set11 = false; set12 = false;};
-document.getElementById("red").onclick = function() {changePen(recentSize, red); set6 = false; set7 = true; set8 = false; set9 = false; set10 = false; set11 = false; set12 = false;};
-document.getElementById("orange").onclick = function() {changePen(recentSize, orange); set6 = false; set7 = false; set8 = true; set9 = false; set10 = false; set11 = false; set12 = false;};
-document.getElementById("yellow").onclick = function() {changePen(recentSize, yellow); set6 = false; set7 = false; set8 = false; set9 = true; set10 = false; set11 = false; set12 = false;};
-document.getElementById("green").onclick = function() {changePen(recentSize, green); set6 = false; set7 = false; set8 = false; set9 = false; set10 = true; set11 = false; set12 = false;};
-document.getElementById("blue").onclick = function() {changePen(recentSize, blue); set6 = false; set7 = false; set8 = false; set9 = false; set10 = false; set11 = true; set12 = false;};
-document.getElementById("purple").onclick = function() {changePen(recentSize, purple); set6 = false; set7 = false; set8 = false; set9 = false; set10 = false; set11 = false; set12 = true;};
+document.getElementById("black").onclick = function () { changePen(recentSize, black); set6 = true; set7 = false; set8 = false; set9 = false; set10 = false; set11 = false; set12 = false; };
+document.getElementById("red").onclick = function () { changePen(recentSize, red); set6 = false; set7 = true; set8 = false; set9 = false; set10 = false; set11 = false; set12 = false; };
+document.getElementById("orange").onclick = function () { changePen(recentSize, orange); set6 = false; set7 = false; set8 = true; set9 = false; set10 = false; set11 = false; set12 = false; };
+document.getElementById("yellow").onclick = function () { changePen(recentSize, yellow); set6 = false; set7 = false; set8 = false; set9 = true; set10 = false; set11 = false; set12 = false; };
+document.getElementById("green").onclick = function () { changePen(recentSize, green); set6 = false; set7 = false; set8 = false; set9 = false; set10 = true; set11 = false; set12 = false; };
+document.getElementById("blue").onclick = function () { changePen(recentSize, blue); set6 = false; set7 = false; set8 = false; set9 = false; set10 = false; set11 = true; set12 = false; };
+document.getElementById("purple").onclick = function () { changePen(recentSize, purple); set6 = false; set7 = false; set8 = false; set9 = false; set10 = false; set11 = false; set12 = true; };
 
-document.getElementById("clear").onclick = function() {clear()};
+document.getElementById("clear").onclick = function () { clear() };
 
 function changePen(size, color) {
     // if changing to an eraser, save the size and color before the change
