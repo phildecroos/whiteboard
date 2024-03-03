@@ -1,4 +1,4 @@
 # Whiteboard
-A simple whiteboard web app: <a href="https://phildecroos.com/whiteboard">https://phildecroos.com/whiteboard</a>
+A whiteboard web app: <a href="https://phildecroos.com/whiteboard">phildecroos.com/whiteboard</a>
 
-<a href="https://www.youtube.com/watch?v=EkG7d2XrCdw&ab_channel=Phil">Here</a> is the video about it.
+Video: <a href="https://youtu.be/EkG7d2XrCdw">youtube</a>
